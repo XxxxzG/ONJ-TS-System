@@ -37,8 +37,8 @@ for model_name in [
         command = f'python -m train --fold {fold} --model_name {model_name}'
         os.system(command)
 
-# command = f'python -m tsne'
-# os.system(command)
+command = f'python -m tsne'
+os.system(command)
 
-# command = f'python -m cam'
-# os.system(command)
+command = f'python -m cam'
+os.system(command)
