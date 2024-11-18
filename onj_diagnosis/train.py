@@ -336,22 +336,3 @@ if __name__=='__main__':
     
     # 6. test
     test_model(dataloaders, model)
-
-    # 4. t-SNE
-    # train_feature_list, train_label_list = extract_feature(dataloaders, model)
-    # tsne = TSNE(n_components=2, random_state=0)
-
-    # N = train_feature_list.shape[0]
-    # feature = train_feature_list.reshape((N,-1))
-    # label = train_label_list.reshape(-1)
-
-    # feature_2d = tsne.fit_transform(feature)
-
-    # plt.figure(figsize=(6, 5))  
-    # plt.scatter(feature_2d[label == 1, 0], feature_2d[label == 1, 1], c='c', label='Osteomyelitis') 
-    # plt.scatter(feature_2d[label == 0, 0], feature_2d[label == 0, 1], c='orange', label='Other') 
-    # # colors = 'r', 'g', 'b', 'c', 'm', 'y', 'k', 'w', 'orange', 'purple'  
-    # # for i, c, label in zip(range(10), colors, digits.target_names):  
-    # #     plt.scatter(X_2d[y == i, 0], X_2d[y == i, 1], c=c, label=label)  
-    # plt.legend()  
-    # plt.show()
